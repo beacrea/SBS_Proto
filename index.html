@@ -3,41 +3,49 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>State Based Systems by the NAIC</title>
-        <meta name="description" content="SBS is a comprehensive, Web-based application for use by state regulators in support of insurance regulatory functions. ">
-        <meta name="viewport" content="width=device-width">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>State Based Systems by the NAIC</title>
+    <meta name="description" content="SBS is a comprehensive, Web-based application for use by state regulators in support of insurance regulatory functions. ">
+    <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body data-responsejs='{
+    "create": [
+        { "prop":"width", "prefix": "min-width-", "lazy":true },
+        { "prop":"width", "prefix":"src", "lazy":true }
+    ]}'
+>
+    <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
         
-    <div class="topBar" role="navigation">
-        <div class="container">
-            <img src="img/SBS_Logo_wTag.png" title="SBS Logo" alt="SBS Logo">
-            <button type="button" class="btn btn-default">Default</button>
+    <div class="sheet-global">
+        <div class="topBar" role="navigation">
+            <div class="container">
+                <img src="img/SBS_Logo_noTag.png" data-min-width-481="img/SBS_Logo_wTag.png" alt="SBS Logo">
+                <button type="button" class="btn btn-default pull-right">Login</button>
+            </div>
         </div>
-    </div>
         
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Simplifying Insurance Regulation</h1>
-        <p>SBS supports state regulators with insurance regulatory functions</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-      </div>
-    </div>
+        <div class="jumbotron">
+          <div class="container">
+            <h1>Simplifying Insurance Regulation</h1>
+            <p>SBS supports state regulators with insurance regulatory functions</p>
+            <p><a class="btn btn-default btn-lg">Log Into SBS</a></p>
+          </div>
+        </div>
+    </div><!-- /.sheet-global -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/response.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

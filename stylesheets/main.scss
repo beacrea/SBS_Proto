@@ -27,70 +27,104 @@
  *		- general styles
  *
  */
+
+
+
+
+
 /*
  * -------------------------------------------
  *	$_VARIABLES
  * -------------------------------------------
  */
+
 /* Colors */
+$color-red: rgb(200, 30, 40);
+$color-blue: rgb(0, 124, 194);
+$color-white: rgb(250, 250, 250);
+
+
+
+
+
 /*
  * -------------------------------------------
  *	$_GLOBAL STYLING
  * -------------------------------------------
  */
-/* Site */
-body {
-  background: #ddd; }
 
-.sheet-global {
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: #fafafa; }
+/* Site */
+
+body { background: #ddd; }
+.sheet-global { max-width: 1600px; margin: 0 auto; background-color: $color-white; }
+
 
 /* Navigation / Header */
-.topBar {
-  padding-top: 1em;
-  padding-bottom: 1em; }
 
-.topBar img {
-  height: auto;
-  max-height: 3em; }
+.topBar { padding-top: 1em; padding-bottom: 1em; }
+.topBar img { height: auto; max-height: 3em; }
+.topBar .btn { 
+    color: $color-blue;
+    border-color: $color-blue;
+    height: 3em;
+    &:hover {
+        background-color: $color-blue;
+        color: $color-white;
+        cursor: pointer;
+    }
+}
 
-.topBar .btn {
-  color: #007cc2;
-  border-color: #007cc2;
-  height: 3em; }
-  .topBar .btn:hover {
-    background-color: #007cc2;
-    color: #fafafa;
-    cursor: pointer; }
+
+
+
 
 /*
  * -------------------------------------------
  *	$_COLOR DEFINITIONS
  * -------------------------------------------
  */
+
 /* Body */
+
+
+
+
+
 /*
  * -------------------------------------------
  *	$_JUMBOTRON
  * -------------------------------------------
  */
-.jumbotron {
-  background: url("../img/hero-dft.jpg") center top no-repeat;
-  color: #fff; }
-  .jumbotron .btn {
-    color: #007cc2; }
+
+.jumbotron {    
+    background: url('../img/hero-dft.jpg') center top no-repeat;
+    //background-size: cover;
+    color: #fff;
+    .btn { 
+        color: $color-blue;
+    }
+}
 
 @media (min-width: 0px) {
-  .jumbotron {
-    background: url("../img/hero-xs.jpg") center top no-repeat; } }
+    .jumbotron {
+        background: url('../img/hero-xs.jpg') center top no-repeat;
+    }
+}
+
 @media (min-width: 480px) {
-  .jumbotron {
-    background: url("../img/hero-sm.jpg") left top no-repeat; } }
+    .jumbotron {
+        background: url('../img/hero-sm.jpg') left top no-repeat;
+    }
+}
+
 @media (min-width: 800px) {
-  .jumbotron {
-    background: url("../img/hero-tb.jpg") left top no-repeat; } }
+    .jumbotron {
+        background: url('../img/hero-tb.jpg') left top no-repeat;
+    }
+}
+
 @media (min-width: 1200px) {
-  .jumbotron {
-    background: url("../img/hero-dk.jpg") left top no-repeat; } }
+    .jumbotron {
+        background: url('../img/hero-dk.jpg') left top no-repeat;
+    }
+}
