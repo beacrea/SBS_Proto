@@ -1,22 +1,50 @@
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/*!
+ *
+ *	SBS Project 
+ * 	Initially created by Coty Beasley
+ *	Email: cdbeasley@naic.org
+ *  Version: 1.01
+ *	Random Chinese Proverb: "When the wind of change blows, some build walls, while others build windmills."
+ * 
+ * -------------------------------------------
+ * 
+ *  TABLE OF CONTENTS
+ *
+ * -------------------------------------------
+ *
+ *	$_GLOBAL STYLING
+ *		- html, body
+ *      - navigation / header
+ *
+ *	&_COLOR DEFINITIONS
+ *		- brand colors
+ *		- highlights
+ *  
+ *	&_TYPOGRAPHY
+ *		- heading hierarchy
+ *		- main page styles
+ *
+ */
 
 
 
 
 
+/*
+ * -------------------------------------------
+ *	$_GLOBAL STYLING
+ * -------------------------------------------
+ */
+
+/* Body */
+
+body { background: rgb(250, 250, 250); }
 
 
+/* Navigation / Header */
 
-
-
-
-
-
-
-
-
+.topBar { padding-top: 1em; padding-bottom: 1em; }
+.topBar img { height: auto; max-height: 3em; }
 
