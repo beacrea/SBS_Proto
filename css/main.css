@@ -50,7 +50,8 @@ body {
 /* Navigation / Header */
 .topBar {
   padding-top: 1em;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  border-top: 0.5em solid #c81e28; }
 
 .topBar img {
   height: auto;
@@ -65,12 +66,56 @@ body {
     color: #fafafa;
     cursor: pointer; }
 
-/*
- * -------------------------------------------
- *	$_COLOR DEFINITIONS
- * -------------------------------------------
- */
-/* Body */
+/* Footer */
+.footerCap {
+  background: #eee;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+  .footerCap .copyright {
+    float: left; }
+    .footerCap .copyright p {
+      margin: 0;
+      color: #666;
+      font-size: 0.75em; }
+      .footerCap .copyright p:first-child {
+        margin-bottom: 0.5em; }
+  .footerCap .socialLinks {
+    float: right;
+    text-align: right;
+    margin-top: 0.25em; }
+    .footerCap .socialLinks img {
+      width: 2em;
+      height: auto;
+      margin-left: 0.25em; }
+  .footerCap .globalLinks {
+    clear: both;
+    border-top: 1px solid #ccc;
+    margin-top: 3em !important;
+    padding-top: 0.5em; }
+    .footerCap .globalLinks a, .footerCap .globalLinks span {
+      margin-right: 0.25em; }
+    .footerCap .globalLinks a {
+      font-size: 0.9em; }
+
+@media (max-width: 500px) {
+  .footerCap {
+    padding-bottom: 1em; }
+    .footerCap .copyright, .footerCap .socialLinks {
+      display: block;
+      float: none;
+      text-align: center;
+      margin-top: 1em; }
+    .footerCap .socialLinks img {
+      margin-left: 0.25em;
+      margin-right: 0.25em;
+      width: 2.5em;
+      height: auto; }
+    .footerCap .globalLinks {
+      margin-top: 0.5em !important;
+      padding-top: 0.5em;
+      text-align: center; }
+      .footerCap .globalLinks a, .footerCap .globalLinks span {
+        margin: 0 0.25em; } }
 /*
  * -------------------------------------------
  *	$_JUMBOTRON
@@ -80,16 +125,19 @@ body {
   background: url("../img/hero-dft.jpg") center top no-repeat;
   color: #fff; }
   .jumbotron .btn {
+    clear: both;
     color: #007cc2; }
 
 @media (min-width: 0px) {
   .jumbotron {
+    text-align: center;
     background: url("../img/hero-xs.jpg") center top no-repeat; } }
 @media (min-width: 480px) {
   .jumbotron {
     background: url("../img/hero-sm.jpg") left top no-repeat; } }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .jumbotron {
+    text-align: left;
     background: url("../img/hero-tb.jpg") left top no-repeat; } }
 @media (min-width: 1200px) {
   .jumbotron {
