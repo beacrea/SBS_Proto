@@ -15,7 +15,7 @@
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-<body data-responsejs='{
+<body class="page-entrance" data-responsejs='{
     "create": [
         { "prop":"width", "prefix": "min-width-", "lazy":true },
         { "prop":"width", "prefix":"src", "lazy":true }
@@ -42,15 +42,46 @@
           </div>
         </div>
         
-        <div class="container">
+        <section class="container section-action">
             <div class="row">
-                <div class="col-sm-4">Test</div><!-- /.col -->
-                <div class="col-sm-4">Test</div><!-- /.col -->
-                <div class="col-sm-4">Test</div><!-- /.col -->
+                <div class="col-sm-4 quickAccess">
+                    <h1>Quick Access</h1>
+                    <button type="button" class="btn btn-lg btn-primary">Apply for a License</button>
+                    <button type="button" class="btn btn-lg btn-primary">Search for a Licensee</button>
+                    <button type="button" class="btn btn-lg btn-primary">Check License Status</button>
+                    <button type="button" class="btn btn-lg btn-primary">Continuing Education</button>
+                </div><!-- /.col -->
+                <div class="col-sm-4">
+                    <h1>Licensee Lookup</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-4">
+                    <h1>State Services</h1>
+                </div><!-- /.col -->
             </div><!-- /.row -->
-        </div><!-- /.container -->
+            <div class="row section-news">
+                <h1>Latest News <a href="#" target="_blank" class="pull-right">read more</a></h1>
+                <article>
+                    <h1>Arkansas Becomes 26th Member to Choose SBS</h1>
+                    <time datetime="2012-11-30">Nov. 30, 2012</time>
+                    <p>The National Association of Insurance Commissioners (NAIC) announced that the Arkansas Insurance Department is the most recent jurisdiction to license State Based Systems (SBS), an NAIC owned and operated regulatory tool.</p>
+                    <a class="btn" href="http://www.naic.org/Releases/2012_docs/arkansas_becomes_26th_member_sbs.htm" target="_blank">Read More</a>
+                </article>
+                <article>
+                    <h1>Arkansas Becomes 26th Member to Choose SBS</h1>
+                    <time datetime="2012-11-30">Nov. 30, 2012</time>
+                    <p>The National Association of Insurance Commissioners (NAIC) announced that the Arkansas Insurance Department is the most recent jurisdiction to license State Based Systems (SBS), an NAIC owned and operated regulatory tool.</p>
+                    <a class="btn" href="http://www.naic.org/Releases/2012_docs/arkansas_becomes_26th_member_sbs.htm" target="_blank">Read More</a>
+                </article>
+                <article>
+                    <h1>Arkansas Becomes 26th Member to Choose SBS</h1>
+                    <time datetime="2012-11-30">Nov. 30, 2012</time>
+                    <p>The National Association of Insurance Commissioners (NAIC) announced that the Arkansas Insurance Department is the most recent jurisdiction to license State Based Systems (SBS), an NAIC owned and operated regulatory tool.</p>
+                    <a class="btn" href="http://www.naic.org/Releases/2012_docs/arkansas_becomes_26th_member_sbs.htm" target="_blank">Read More</a>
+                </article>
+            </div><!-- /.row -->
+        </section><!-- /.container -->
         
-        <div class="footerCap">
+        <footer class="footerCap">
             <div class="container">
               <div class="col-sm-6 col-md-8 socialLinks">
                 <a href="#" target="_blank">
@@ -73,7 +104,7 @@
                 <a href="http://www.naic.org/index_help.htm" target="_blank">NAIC Home Page</a>
               </div> <!-- /.globalLinks -->
             </div> <!-- /.container -->
-          </div> <!-- /.footerCap -->
+          </footer> <!-- /.footerCap -->
         
     </div><!-- /.sheet-global -->
 

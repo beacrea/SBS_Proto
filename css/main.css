@@ -70,7 +70,8 @@ body {
 .footerCap {
   background: #eee;
   padding-top: 0.5em;
-  padding-bottom: 0.5em; }
+  padding-bottom: 0.5em;
+  border-top: 6px solid #007cc2; }
   .footerCap .copyright {
     float: left; }
     .footerCap .copyright p {
@@ -142,3 +143,70 @@ body {
 @media (min-width: 1200px) {
   .jumbotron {
     background: url("../img/hero-dk.jpg") left top no-repeat; } }
+/*
+ * -------------------------------------------
+ *	$_PAGE-SPECIFIC
+ * -------------------------------------------
+ */
+/* Entrance Page */
+.page-entrance .section-action {
+  margin-bottom: 2em; }
+  .page-entrance .section-action h1 {
+    font-size: 1.5em;
+    color: #007cc2;
+    border-bottom: 4px solid #007cc2;
+    line-height: 120%;
+    padding-bottom: 0.25em; }
+  .page-entrance .section-action .quickAccess .btn {
+    width: 100%;
+    display: block;
+    margin-top: 0.5em;
+    color: #fafafa;
+    background-color: #0a0a0a;
+    border: 0; }
+    .page-entrance .section-action .quickAccess .btn:first-child {
+      margin-top: 0; }
+    .page-entrance .section-action .quickAccess .btn:hover {
+      background-color: #007cc2; }
+.page-entrance .section-news h1 {
+  background-color: #007cc2;
+  color: #fafafa;
+  padding: 0.25em 15px;
+  line-height: 100%;
+  font-size: 1.5em;
+  border: 0;
+  margin-top: 2em; }
+  .page-entrance .section-news h1 a {
+    color: #fafafa;
+    font-size: 0.75em; }
+    .page-entrance .section-news h1 a:before {
+      content: "// "; }
+.page-entrance .section-news article {
+  border-bottom: 1px dotted #ccc;
+  padding: 0.75em 15px 0;
+  clear: both; }
+  .page-entrance .section-news article:last-child {
+    border: 0; }
+  .page-entrance .section-news article time {
+    color: #007cc2;
+    font-style: italic;
+    margin-bottom: 0.25em; }
+  .page-entrance .section-news article h1 {
+    font-size: 1.25em;
+    background-color: transparent;
+    color: #0a0a0a;
+    padding: 0;
+    margin: 0; }
+  .page-entrance .section-news article p {
+    font-size: 1em;
+    margin-bottom: 0.75em;
+    margin-top: 0.25em; }
+  .page-entrance .section-news article a {
+    display: inline-block;
+    background-color: #0a0a0a;
+    color: #fafafa;
+    padding: 0.25em 0.5em;
+    margin-bottom: 1em; }
+    .page-entrance .section-news article a:hover {
+      background-color: #007cc2;
+      text-decoration: none; }
