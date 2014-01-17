@@ -67,7 +67,7 @@
                     <h1>State Services</h1>
                     <p>See a full list of that state's available services, tools, courses, and contact information.</p>
                     <select class="form-control listofStates input-lg"></select>
-                    <button class="btn btn-lg">Search</button>
+                    <button class="btn btn-lg" data-toggle="modal" data-target="#contactInfo">Search</button>
                 </div><!-- /.col -->
             </section><!-- /.row -->
             <section class="row section-news">
@@ -117,6 +117,32 @@
               </div> <!-- /.globalLinks -->
             </div> <!-- /.container -->
           </footer> <!-- /.footerCap -->
+    
+        <div class="modal fade" id="contactInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">State Information</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="state-contact">
+                            <!-- JSON -->
+                        </div><!-- /.state-contact -->
+                        <div class="state-services">
+                            <p>
+                                <span class="dataTitle">Services</span>
+                                <span></span>
+                            </p>
+                        </div><!-- /.state-services -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
         
     </div><!-- /.sheet-global -->
 

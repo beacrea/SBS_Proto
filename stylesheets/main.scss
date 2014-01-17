@@ -25,6 +25,9 @@
  *  
  *	&_JUMBOTRON
  *		- general styles
+ *  
+ *	$_HELPERS / PLUGINS
+ *		- modals
  *
  */
 
@@ -302,4 +305,40 @@ body { background: #ddd; }
             }
         }
     }  
+}
+
+
+
+
+
+/*
+ * -------------------------------------------
+ *	$_HELPERS / PLUGINS
+ * -------------------------------------------
+ */
+
+
+/* Modal Styles */
+
+body.modal-open, 
+.modal-open .navbar-fixed-top, 
+.modal-open .navbar-fixed-bottom {
+    margin-right: 0px;
+}
+body.modal-open {
+    overflow: hidden;
+}
+.modal {
+    overflow-y: auto;
+    .modal-body {
+        span {
+            display: block;
+        }       
+    }
+    .dataTitle {
+        font-weight: bold;
+    }
+    p {
+        margin-bottom: 1em;
+    }
 }

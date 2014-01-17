@@ -25,6 +25,9 @@
  *  
  *	&_JUMBOTRON
  *		- general styles
+ *  
+ *	$_HELPERS / PLUGINS
+ *		- modals
  *
  */
 /*
@@ -216,3 +219,26 @@ body {
     .page-entrance .section-news article a:hover {
       background-color: #007cc2;
       text-decoration: none; }
+
+/*
+ * -------------------------------------------
+ *	$_HELPERS / PLUGINS
+ * -------------------------------------------
+ */
+/* Modal Styles */
+body.modal-open,
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+  margin-right: 0px; }
+
+body.modal-open {
+  overflow: hidden; }
+
+.modal {
+  overflow-y: auto; }
+  .modal .modal-body span {
+    display: block; }
+  .modal .dataTitle {
+    font-weight: bold; }
+  .modal p {
+    margin-bottom: 1em; }
